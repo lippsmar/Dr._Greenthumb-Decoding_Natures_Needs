@@ -100,5 +100,5 @@ Sonia Mayel | Sadia Khan Rupa | Marvin Lipps
 
 ## 🏁 Final Thoughts
 **Dr. Greenthumb** harnesses the power of machine learning and LLMs to bring a practical, user-friendly solution to plant care. Whether diagnosing diseases or offering expert advice, this project aims to make plant care more accessible and engaging for all users.
-Here you can see our [final presentation](<https://docs.google.com/presentation/d/17wLVmW2HVz_QQxeN78b26KHGa78dyxvCeL45_Nu1le8/edit?usp=sharing>) at the WBS Coding School Demo Day.
+You can watch our [final presentation](<https://docs.google.com/presentation/d/17wLVmW2HVz_QQxeN78b26KHGa78dyxvCeL45_Nu1le8/edit?usp=sharing>) including a recording of our App in action at the WBS Coding School Demo Day.
 
