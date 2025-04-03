@@ -21,12 +21,10 @@ import streamlit as st
 physical_devices = tf.config.list_physical_devices('GPU')
 if physical_devices:
     try:
-        # Setze die Optionen für das Wachstum des VRAM
         for device in physical_devices:
             tf.config.experimental.set_memory_growth(device, True)
 
     except RuntimeError as e:
-        # Fehlerbehandlung, falls das Wachstum des VRAM nicht aktiviert werden kann
         print(e)
 
 
@@ -52,11 +50,9 @@ embeddings = HuggingFaceEmbeddings(model_name=embedding_model,
 # # load vector database
 # vector_db = Chroma(persist_directory=r"C:\Users\Marvin\Documents\WBS\Final_Project\LLM\vector_db\chroma_db", embedding_function=embeddings)
 
-# Konfigurieren Sie die Chroma-Bibliothek und legen Sie allow_dangerous_deserialization=True fest
 vector_db = Chroma(
     persist_directory=r"C:\Users\Marvin\Documents\WBS\Final_Project\LLM\vector_db\chroma_db",
     embedding_function=embeddings,
-    #allow_dangerous_deserialization=True  # Hier legen Sie allow_dangerous_deserialization=True fest
 )
 
 # retriever
@@ -202,8 +198,6 @@ except FileNotFoundError:
 
 ##########################################################
 
-
-# Allow users to upload an image
 
 # Load the Keras model
 model = load_model(os.path.join(r'C:\Users\Marvin\Documents\WBS\Final_Project\Dr.-Greenthumb-Decoding-Nature-s-Needs\Models','multi_diseases_classifier_tomato_98.h5'))
